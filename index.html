@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificador Heroi</title>
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+    <div class="classificador" id="classic">
+        <form>
+            <div class="nome">
+                <h1>Nome do herói</h1> <br>
+                <input type="text" id="name" placeholder="Digite o nome do herói">    
+            </div>
+            <div class="nivel">
+                <h1>Experiência do herói</h1> <br>
+                <input type="number" id="xp" placeholder="Digite o nível do herói" min="0">
+            </div>
+            <div class="button" id="button">
+                <button onclick="main(event)" type="submit" id="button">Classificar</button>
+            </div>
+        </form>
+        <div id="resultado"> 
+            <span id="rankText"></span>
+            <img id="rankImg" src="">
+        </div>
+    </div>
+    <script src="src/engine/index.js" defer></script>
+</body>
+</html>
